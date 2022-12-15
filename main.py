@@ -39,9 +39,9 @@ def main():
             notifier.send("----------New Items!----------", print_message=True)
 
             # finding items in new_List NOT in old_List
-            listings = np.setdiff1d(new_List, old_List)
+            listings = [item for item in new_List if item not in old_List]
 
-            # seding discord notification for each new listing
+            # sending discord notification for each new listing
             for item in listings:
                 discord_message = item.productName + " " + item.productURL \
                                   + "               " + item.imageURL + " "
