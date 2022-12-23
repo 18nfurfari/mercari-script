@@ -7,7 +7,7 @@ import numpy as np
 
 def main():
     # def search(keywords, sort="created_time", order="desc", status="on_sale", limit=120):
-    search_query = "のカービィ ときめきクレーン"
+    search_query = ""
 
     # send that invite link again
     notifier = dn.Notifier(
