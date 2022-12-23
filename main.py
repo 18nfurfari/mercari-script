@@ -8,8 +8,10 @@ import numpy as np
 def main():
     # def search(keywords, sort="created_time", order="desc", status="on_sale", limit=120):
     search_query = "のカービィ ときめきクレーン"
+
+    # send that invite link again
     notifier = dn.Notifier(
-        "https://discord.com/api/webhooks/1051654616133148732/ON0N3XSvxxYMkbR929yQ99d2Hiyq99b9tyyj3We5A8e0YHtiIARh2gkkYgkARuy5Mwqy")
+        "https://discord.com/api/webhooks/1055628680082239618/Dq8aDfJLyPo5B3m2QH8awMZn_qN7IxRHLqNuVSh-kw-mkDfktJPMKZFs2gvD3TBdLuYj")
 
     # forming initial "old" list
     print("-----Old list formed-----", datetime.now().strftime("%m/%d/%Y %H:%M:%S"))
@@ -38,7 +40,7 @@ def main():
         elif old_count - new_count < 0:
             notifier.send("----------New Items!----------", print_message=True)
 
-            # finding items in new_List NOT in old_List
+            # finding items in new_List NOT in old_List (broken)
             listings = [item for item in new_List if item not in old_List]
 
             # sending discord notification for each new listing
