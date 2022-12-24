@@ -9,9 +9,8 @@ def main():
     # def search(keywords, sort="created_time", order="desc", status="on_sale", limit=120):
     search_query = ""
 
-    # send that invite link again
     notifier = dn.Notifier(
-        "https://discord.com/api/webhooks/1055628680082239618/Dq8aDfJLyPo5B3m2QH8awMZn_qN7IxRHLqNuVSh-kw-mkDfktJPMKZFs2gvD3TBdLuYj")
+        "")
 
     # forming initial "old" list
     print("-----Old list formed-----", datetime.now().strftime("%m/%d/%Y %H:%M:%S"))
